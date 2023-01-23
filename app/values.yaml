@@ -10,5 +10,5 @@ app:
        - key: key
          value: value
   service:
-    type: NodePort
+    type: ClusterIP
     port: 8080
