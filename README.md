@@ -31,4 +31,4 @@ Then add the following lines to your /etc/hosts file:
 `adminer.k8s.com <MINIKUBE-IP>`  
 `kanban.k8s.com <MINIKUBE-IP>`
 
-Visit kanban.k8s.com to view the app, and visit adminer.k8s.com to manage the database.
+Visit kanban.k8s.com to use the kanban board app, and visit adminer.k8s.com to manage the database.
