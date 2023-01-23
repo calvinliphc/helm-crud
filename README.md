@@ -23,3 +23,12 @@ To install this app on your cluster, run the following commands:
 `helm install -f kanban-ui.yaml kanban-ui ./app`
 
 `helm install -f ingress.yaml ingress ./ingress`
+
+Run `minikube ip` to check the IP address of your minikube cluster.
+
+Then add the following lines to your /etc/hosts file:
+
+`adminer.k8s.com <MINIKUBE-IP>`
+`kanban.k8s.com <MINIKUBE-IP>`
+
+Visit kanban.k8s.com to view the app, and visit adminer.k8s.com to manage the database.
