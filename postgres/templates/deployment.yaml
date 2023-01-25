@@ -30,4 +30,5 @@ spec:
                 name: {{ .Values.postgres.config.name }}
           volumeMounts:             
             - name: {{ .Values.postgres.volume.name }}
-              mountPath: {{ .Values.postgres.volume.mountPath }} 
+              mountPath: {{ .Values.postgres.volume.mountPath }}
+              subPath: {{ .Values.postgres.volume.subPath }}
