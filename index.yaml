@@ -1,0 +1,52 @@
+apiVersion: v1
+entries:
+  app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-26T22:11:58.631960438Z"
+    description: A Helm chart for Kubernetes
+    digest: 2e70bf6e622d5016564e1a43bce1b194c3ebcb1e0deae4f396df584052c19357
+    keywords:
+    - app
+    - java
+    - javascript
+    - angular
+    name: app
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/app-0.2.0/app-0.2.0.tgz
+    version: 0.2.0
+  ingress:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-26T22:11:58.759806973Z"
+    dependencies:
+    - name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.4.0
+    description: A Helm chart for Ingress Controller
+    digest: 080cfcece70160d50e0f6cbb654c4345074d8c9314ffb723833d45852f69be4b
+    keywords:
+    - ingress
+    - nginx
+    - api-gateway
+    name: ingress
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/ingress-0.1.0/ingress-0.1.0.tgz
+    version: 0.1.0
+  postgres:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-26T22:11:58.874859815Z"
+    description: A Helm chart for Kubernetes
+    digest: 6a7d750950814065c14b019e0b26903b7840e3115dc49cf055fc8b0d2c1251eb
+    keywords:
+    - database
+    - postgres
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-01-26T22:11:58.874864615Z"
