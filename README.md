@@ -31,4 +31,5 @@ Let's refer to this IP as <CLUSTER_IP>
 
 Visit <CLUSTER_IP> to use the kanban board app, and visit <CLUSTER_IP>/adminer to manage the database.
 
-# test
+
+
