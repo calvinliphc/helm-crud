@@ -29,4 +29,4 @@ Run `minikube ip` to check the IP address of your minikube cluster.
 For a managed GKE/EKS cluster, run `kubectl get services` and check the External IP of your ingress controller.
 Let's refer to this IP as <CLUSTER_IP>
 
-Visit <CLUSTER_IP> to use the kanban board app, and visit <CLUSTER_IP/adminer> to manage the database.
+Visit <CLUSTER_IP> to use the kanban board app, and visit <CLUSTER_IP>/adminer to manage the database.
