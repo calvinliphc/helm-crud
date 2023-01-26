@@ -14,21 +14,16 @@ Finally, ensure that you have [kubectl](https://kubernetes.io/docs/tasks/tools/)
 
 To install this app on your cluster, run the following commands:
 
-`helm install -f kanban-postgres.yaml postgres ./postgres`
+`helm install -f values/kanban-postgres.yaml postgres ./charts/postgres`
 
-`helm install -f adminer.yaml adminer ./app`
+`helm install -f values/adminer.yaml adminer ./charts/app`
 
-`helm install -f kanban-app.yaml kanban-app ./app`
+`helm install -f values/kanban-app.yaml kanban-app ./charts/app`
 
-`helm install -f kanban-ui.yaml kanban-ui ./app`
+`helm install -f values/kanban-ui.yaml kanban-ui ./charts/app`
 
-`helm install -f ingress.yaml ingress ./ingress`
+`helm install -f values/ingress.yaml ingress ./charts/ingress`
 
 Run `minikube ip` to check the IP address of your minikube cluster.
 
-Then add the following lines to your /etc/hosts file:
-
-`adminer.k8s.com <MINIKUBE-IP>`  
-`kanban.k8s.com <MINIKUBE-IP>`
-
-Visit kanban.k8s.com to use the kanban board app, and visit adminer.k8s.com to manage the database.
+Visit <MINIKUBE_IP> to use the kanban board app, and visit <MINIKUBE_IP/adminer> to manage the database.
