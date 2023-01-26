@@ -11,7 +11,7 @@ If running on minikube, make sure your minikube cluster has ingress enabled by r
 
 Then, make sure you have [helm](https://helm.sh/docs/intro/install/) installed on your local machine
 
-Finally, ensure that you have [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and that it is configured for your cluster (either minikube or your managed EKS/GKE cluster). You can run `kubectl config use-context <cluster_name>" to switch to the right context ("minikube" is the default name for minikube cluster config).
+Finally, ensure that you have [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and that it is configured for your cluster (either minikube or your managed EKS/GKE cluster). You can run `kubectl config use-context <cluster_name>` to switch to the right context ("minikube" is the default name for minikube cluster config).
 
 To install this app on your cluster, run the following commands:
 
