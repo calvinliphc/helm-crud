@@ -1,13 +1,13 @@
 ingress:
   hosts:
-    - host: adminer.k8s.com
+    - host:
       paths:
-        - path: /
+        - path: /adminer
           pathType: Prefix
           backend:  
             serviceName: adminer
             servicePort: 8080
-    - host: kanban.k8s.com
+    - host:
       paths: 
         - path: /api/
           pathType: Prefix
