@@ -27,3 +27,8 @@ keywords:
   - java
   - javascript
   - angular
+
+dependencies:
+  - name: app-base
+    version: "0.2.0"
+    repository: file://../app-base
