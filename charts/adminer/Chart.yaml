@@ -28,6 +28,6 @@ keywords:
   - postgres
 
 dependencies:
-  - name: app-base
+  - name: app
     version: "0.2.0"
-    repository: file://../app-base
+    repository: file://../app
