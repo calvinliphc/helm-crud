@@ -2,13 +2,13 @@
 
 Based on this [tutorial](https://wkrzywiec.medium.com/how-to-deploy-application-on-kubernetes-with-helm-39f545ad33b8) and this [repo](https://github.com/wkrzywiec/k8s-helm-helmfile/tree/master/helm)
 
-This is designed to work on a local minikube cluster.
-You can also run these charts on a managed Kubernetes service such as GKE or EKS.
+
+## Install using chart templates
 
 If running on minikube, make sure your minikube cluster has ingress enabled by running:
 `minikube addons enable ingress` Then, make sure you have [helm](https://helm.sh/docs/intro/install/) installed on your local machine 
 
-Finally, ensure that you have [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and that it is configured for your cluster (either minikube or your managed EKS/GKE cluster). You can run `kubectl config use-context <cluster_name>` to switch to the right context ("minikube" is the default name for minikube cluster config).
+Finally, ensure that you have [kubectl](https://kubernetes.io/docs/tasks/tools/) installed and that it is configured for your cluster (either minikube or your managed EKS/GKE cluster or any other kubernetes cluster). You can run `kubectl config use-context <cluster_name>` to switch to the right context ("minikube" is the default name for minikube cluster config).
 
 To install this app on your cluster, run the following commands:
 
@@ -29,6 +29,8 @@ Let's refer to this IP as <ENDPOINT_IP>
 Visit <ENDPOINT_IP> to use the kanban board app, and visit <ENDPOINT_IP>/adminer to manage the database.
 
 
+## Install using helm package repository
+
 You can also add this repository as a helm package repository!
 
 First run
@@ -46,3 +48,25 @@ Then you install with:
 `helm install -f values/kanban-ui.yaml kanban-ui helm-crud/app-ui`
 
 `helm install -f values/ingress.yaml ingress helm-crud/ingress`
+
+## Install using Terraform
+
+By far the simplest method, simply cd into the ./terraform directory
+
+Then run
+
+`terraform init`
+
+`terraform apply`
+
+*OR*
+
+There are 2 variables you can override:
+
+* config_path : by default "~/.kube/config"; path to the kube config for your cluster
+* config_context : by default "": name of the specific cluster context within your kube config
+
+Change these values in a terraform.tfvars file or pass them into the terraform apply command like so:
+
+`terraform apply -var config_path=/some/path -var config_context=contextname`
+
