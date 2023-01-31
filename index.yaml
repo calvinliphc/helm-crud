@@ -1,6 +1,36 @@
 apiVersion: v1
 entries:
+  adminer:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-31T18:54:46.131034975Z"
+    description: A Helm chart for Kubernetes
+    digest: a57fd7e9637305d7b90b6ecc2877e5b641b1dbf8a7868e5215e4f88bbe93345f
+    keywords:
+    - db
+    - postgres
+    - adminer
+    name: adminer
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/adminer-0.3.1/adminer-0.3.1.tgz
+    version: 0.3.1
   app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-31T18:54:46.327351808Z"
+    description: A Helm chart for Kubernetes
+    digest: 39145408a8942a4403a78745743135b1620245a399594af7937af6502c458691
+    keywords:
+    - app
+    - java
+    - javascript
+    - angular
+    name: app
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/app-0.3.1/app-0.3.1.tgz
+    version: 0.3.1
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2023-01-31T18:49:33.544626038Z"
@@ -31,6 +61,22 @@ entries:
     urls:
     - https://github.com/calvinliphc/helm-crud/releases/download/app-0.2.0/app-0.2.0.tgz
     version: 0.2.0
+  app-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-31T18:54:46.566906895Z"
+    description: A Helm chart for Kubernetes
+    digest: c7220c78a1e59b82702d6351b65b3438bdcbcebf3f41b93baacfac2f7ce1dbc4
+    keywords:
+    - app
+    - java
+    - javascript
+    - angular
+    name: app-ui
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/app-ui-0.3.1/app-ui-0.3.1.tgz
+    version: 0.3.1
   ingress:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -64,4 +110,4 @@ entries:
     urls:
     - https://github.com/calvinliphc/helm-crud/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-31T18:49:33.544635038Z"
+generated: "2023-01-31T18:54:46.566921896Z"
