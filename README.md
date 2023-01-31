@@ -22,13 +22,6 @@ To install this app on your cluster, run the following commands:
 
 `helm install -f values/ingress.yaml ingress ./charts/ingress`
 
-Run `minikube ip` to check the IP address of your minikube cluster.
-For a managed GKE/EKS cluster, run `kubectl get services` and check the External IP of your ingress controller.
-Let's refer to this IP as <ENDPOINT_IP>
-
-Visit <ENDPOINT_IP> to use the kanban board app, and visit <ENDPOINT_IP>/adminer to manage the database.
-
-
 ## Install using helm package repository
 
 You can also add this repository as a helm package repository!
@@ -69,4 +62,13 @@ There are 2 variables you can override:
 Change these values in a terraform.tfvars file or pass them into the terraform apply command like so:
 
 `terraform apply -var config_path=/some/path -var config_context=contextname`
+
+
+## Access the application
+
+Run `minikube ip` to check the IP address of your minikube cluster.
+For a managed GKE/EKS cluster, run `kubectl get services` and check the External IP of your ingress controller.
+Let's refer to this IP as <ENDPOINT_IP>
+
+Visit <ENDPOINT_IP> to use the kanban board app, and visit <ENDPOINT_IP>/adminer to manage the database.
 
