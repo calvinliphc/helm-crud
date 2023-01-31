@@ -3,6 +3,21 @@ entries:
   app:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-01-31T18:49:33.544626038Z"
+    description: A Helm chart for Kubernetes
+    digest: 3c8c6908e4221e3d3c6d4413f9bb1c78c46a78f233c5a0aadd4dbec519ec074a
+    keywords:
+    - app
+    - java
+    - javascript
+    - angular
+    name: app
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/app-0.3.0/app-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-01-26T22:11:58.631960438Z"
     description: A Helm chart for Kubernetes
     digest: 2e70bf6e622d5016564e1a43bce1b194c3ebcb1e0deae4f396df584052c19357
@@ -49,4 +64,4 @@ entries:
     urls:
     - https://github.com/calvinliphc/helm-crud/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-26T22:11:58.874864615Z"
+generated: "2023-01-31T18:49:33.544635038Z"
