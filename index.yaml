@@ -99,6 +99,19 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-02-01T09:24:01.642041161Z"
+    description: A Helm chart for Kubernetes
+    digest: cd0891e0b023487b3b8897e2efba61a79a96f71622067b065e5a3019f001e0f2
+    keywords:
+    - database
+    - postgres
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/calvinliphc/helm-crud/releases/download/postgres-0.2.0/postgres-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-01-26T22:11:58.874859815Z"
     description: A Helm chart for Kubernetes
     digest: 6a7d750950814065c14b019e0b26903b7840e3115dc49cf055fc8b0d2c1251eb
@@ -110,4 +123,4 @@ entries:
     urls:
     - https://github.com/calvinliphc/helm-crud/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-31T18:54:46.566921896Z"
+generated: "2023-02-01T09:24:01.642055161Z"
