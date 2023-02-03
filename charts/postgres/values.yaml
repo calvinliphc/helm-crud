@@ -12,7 +12,7 @@ postgres:
   volume:
     name: postgres-storage
     kind: PersistentVolumeClaim
-    mountPath: /var/lib/postgresql/data:z
+    mountPath: /var/lib/postgresql/data
     subPath: postgres
     pvc:
       name: postgres-persistent-volume-claim
